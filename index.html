@@ -8,6 +8,9 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +28,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#home">Dragon</a>
+                <a class="navbar-brand" href="#home">Sabbir Ahamad</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -52,22 +55,23 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7 text-center text-lg-start">
-                        <h1 class="display-3 fw-bold animate-on-load">Dragon</h1>
-                        <p class="lead text-primary fw-medium animate-on-load">IT Student | Aspiring Cybersecurity Engineer | Web Developer</p>
-                        <p class="mt-3 animate-on-load">A passionate IT undergraduate from Bangladesh with a keen interest in cybersecurity and web technologies.</p>
-                        <div class="mt-4 animate-on-load">
+                        <h1 class="display-3 fw-bold" data-aos="fade-down">Hi! I'm <span style="color: orange;">Sabbir Ahamad</span></h1>
+                        <p class="lead text-primary fw-medium" data-aos="fade-down" data-aos-delay="100">IT Student | Aspiring Cybersecurity Engineer | Web Developer</p>
+                        <p class="mt-3" data-aos="fade-down" data-aos-delay="200">A passionate IT undergraduate from Bangladesh with a keen interest in cybersecurity and web technologies.</p>
+                        <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
                             <a href="#projects" class="btn btn-primary btn-lg">View Projects</a>
                             <a href="#contact" class="btn btn-outline-secondary btn-lg ms-2">Contact Me</a>
                         </div>
-                        <div class="social-icons mt-4 animate-on-load">
-                            <a href="https://github.com" target="_blank" class="text-decoration-none me-3"><i class="fab fa-github fa-2x"></i></a>
-                            <a href="https://linkedin.com" target="_blank" class="text-decoration-none me-3"><i class="fab fa-linkedin fa-2x"></i></a>
-                            <a href="mailto:email@example.com" class="text-decoration-none"><i class="fas fa-envelope fa-2x"></i></a>
+                        <div class="social-icons mt-4" data-aos="fade-up" data-aos-delay="400">
+                            <a href="https://github.com/SabbirDG001" target="_blank" class="text-decoration-none me-3"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/in/sabbir-ahamad-b43a14263/" target="_blank" class="text-decoration-none me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="mailto:sabbiras75ag@gmail.com" class="text-decoration-none"><i class="fas fa-envelope fa-2x"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-5 d-none d-lg-block">
-                        <div class="profile-img-container animate-on-load">
+                        <div class="profile-img-container" data-aos="zoom-in" data-aos-delay="500">
                             <!-- Placeholder for profile image -->
+                             <img src="./assets/images/profile.jpeg" alt="">
                         </div>
                     </div>
                 </div>
@@ -77,23 +81,23 @@
         <!-- About Section -->
         <section id="about" class="py-5">
             <div class="container">
-                <h2 class="section-title text-center mb-5 animate-on-scroll">About Me</h2>
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">About Me</h2>
                 <div class="row align-items-center">
-                    <div class="col-lg-6 animate-on-scroll">
-                        <p class="lead">Hello! I'm a dedicated and curious IT student currently pursuing my degree at [Your University Name]. My passion lies at the intersection of web development and cybersecurity.</p>
-                        <p>I enjoy building secure and functional web applications and am always eager to dive into Capture The Flag (CTF) challenges to sharpen my problem-solving skills. My goal is to leverage my knowledge to build a career as a cybersecurity professional, contributing to a safer digital world.</p>
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <p class="lead">I'm a dedicated and curious IT student currently pursuing my degree at <span style="color: orange;">Mawlana Bhashani Science and Technology University</span>. My passion lies at the intersection of <span style="color: orange;">web development</span> and <span style="color: orange;">cybersecurity</span>.</p>
+                        <p>I enjoy building secure and functional web applications and am always eager to dive into <span style="color: orange;">Capture The Flag (CTF)</span> challenges to sharpen my problem-solving skills. My goal is to leverage my knowledge to build a career as a cybersecurity professional, contributing to a safer digital world.</p>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0">
                         <div class="row">
-                            <div class="col-md-12 mb-3 animate-on-scroll">
+                            <div class="col-md-12 mb-3" data-aos="fade-left" data-aos-delay="100">
                                 <div class="card about-card">
                                     <div class="card-body">
                                         <h5 class="card-title text-primary"><i class="fas fa-book-open me-2"></i>What I'm Learning</h5>
-                                        <p class="card-text">Advanced Web Security, Network Penetration Testing, and Cloud Technologies.</p>
+                                        <p class="card-text">Advanced Web Security, Network and Web Penetration Testing, and Cloud Technologies.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 mb-3 animate-on-scroll">
+                            <div class="col-md-12 mb-3" data-aos="fade-left" data-aos-delay="200">
                                 <div class="card about-card">
                                     <div class="card-body">
                                         <h5 class="card-title text-primary"><i class="fas fa-puzzle-piece me-2"></i>What I Enjoy Solving</h5>
@@ -101,7 +105,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 animate-on-scroll">
+                            <div class="col-md-12" data-aos="fade-left" data-aos-delay="300">
                                 <div class="card about-card">
                                     <div class="card-body">
                                         <h5 class="card-title text-primary"><i class="fas fa-bullseye me-2"></i>Career Goal</h5>
@@ -118,9 +122,9 @@
         <!-- Skills Section -->
         <section id="skills" class="py-5 bg-body-tertiary">
             <div class="container">
-                <h2 class="section-title text-center mb-5 animate-on-scroll">My Skills</h2>
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">My Skills</h2>
                 <div class="row">
-                    <div class="col-lg-6 animate-on-scroll">
+                    <div class="col-lg-6" data-aos="zoom-in-right">
                         <h5 class="text-primary mb-3">Programming & Web</h5>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
@@ -168,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 animate-on-scroll">
+                    <div class="col-lg-6" data-aos="zoom-in-left">
                         <h5 class="text-primary mb-3">Cybersecurity & Tools</h5>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
@@ -223,27 +227,27 @@
         <!-- Projects Section -->
         <section id="projects" class="py-5">
             <div class="container">
-                <h2 class="section-title text-center mb-5 animate-on-scroll">My Projects</h2>
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">My Projects</h2>
                 <div class="row g-4">
                     <!-- Project 1 -->
-                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="card project-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Attendance Management System</h5>
                                 <p class="card-text">A web-based system to track and manage student attendance efficiently.</p>
                                 <div class="tech-stack mb-3">
-                                    <span class="badge bg-secondary">HTML</span>
-                                    <span class="badge bg-secondary">CSS</span>
-                                    <span class="badge bg-secondary">PHP</span>
-                                    <span class="badge bg-secondary">MySQL</span>
+                                    <span class="badge bg-secondary">React</span>
+                                    <span class="badge bg-secondary">NodeJs</span>
+                                    <span class="badge bg-secondary">MongoDB</span>
+                                    <span class="badge bg-secondary">ExpressJs</span>
                                 </div>
-                                <a href="#" class="btn btn-sm btn-primary">GitHub <i class="fab fa-github"></i></a>
-                                <a href="#" class="btn btn-sm btn-outline-secondary">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/SabbirDG001/attendence_system" target="_blank" class="btn btn-sm btn-primary">GitHub <i class="fab fa-github"></i></a>
+                                <!-- <a href="#" class="btn btn-sm btn-outline-secondary">Live Demo <i class="fas fa-external-link-alt"></i></a> -->
                             </div>
                         </div>
                     </div>
                     <!-- Project 2 -->
-                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="card project-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Process Scheduling Simulator</h5>
@@ -256,7 +260,7 @@
                         </div>
                     </div>
                     <!-- Project 3 -->
-                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="card project-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Steganography Tool</h5>
@@ -270,7 +274,7 @@
                         </div>
                     </div>
                     <!-- Project 4 -->
-                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="card project-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Subtitle Generator</h5>
@@ -283,7 +287,7 @@
                         </div>
                     </div>
                      <!-- Project 5 -->
-                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="card project-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Portfolio Website</h5>
@@ -305,32 +309,32 @@
         <!-- Experience & Education Section -->
         <section id="experience" class="py-5 bg-body-tertiary">
             <div class="container">
-                <h2 class="section-title text-center mb-5 animate-on-scroll">Experience & Education</h2>
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">Experience & Education</h2>
                 <div class="timeline">
-                    <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-item" data-aos="fade-right">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h5 class="text-primary">B.Sc. in Information Technology</h5>
-                            <p class="mb-1"><strong>[Your University Name], Bangladesh</strong></p>
-                            <small class="text-muted">2021 - Present</small>
+                            <p class="mb-1"><strong style="color: orange;">Mawlana Bhashani Science and Technology University, Tangail, Bangladesh</strong></p>
+                            <small class="text-muted">2022 - Present</small>
                             <p>Focusing on software development, networking, and cybersecurity principles.</p>
                         </div>
                     </div>
-                    <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-item" data-aos="fade-left">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h5 class="text-primary">CTF Practice</h5>
-                            <p class="mb-1"><strong>TryHackMe & Hack The Box</strong></p>
+                            <p class="mb-1"><strong style="color: orange;">TryHackMe & Hack The Box</strong></p>
                             <small class="text-muted">Ongoing</small>
                             <p>Actively solving challenges to improve skills in penetration testing, reverse engineering, and cryptography.</p>
                         </div>
                     </div>
-                    <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-item" data-aos="fade-right">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h5 class="text-primary">Academic Projects</h5>
-                            <p class="mb-1"><strong>University Coursework</strong></p>
-                            <small class="text-muted">2021 - Present</small>
+                            <p class="mb-1"><strong style="color: orange;">University Coursework</strong></p>
+                            <small class="text-muted">2022 - Present</small>
                             <p>Developed various projects including a database management system, an OS simulator, and more.</p>
                         </div>
                     </div>
@@ -341,9 +345,9 @@
         <!-- Achievements Section -->
         <section id="achievements" class="py-5">
             <div class="container">
-                <h2 class="section-title text-center mb-5 animate-on-scroll">Achievements & Certifications</h2>
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">Achievements & Certifications</h2>
                 <div class="row g-4">
-                    <div class="col-md-6 animate-on-scroll">
+                    <div class="col-md-6" data-aos="flip-left">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title text-primary"><i class="fas fa-trophy me-2"></i>CTF Competitions</h5>
@@ -351,7 +355,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 animate-on-scroll">
+                    <div class="col-md-6" data-aos="flip-right" data-aos-delay="100">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title text-primary"><i class="fas fa-certificate me-2"></i>Online Courses</h5>
@@ -366,9 +370,9 @@
         <!-- Blog Section -->
         <section id="blog" class="py-5 bg-body-tertiary">
             <div class="container">
-                <h2 class="section-title text-center mb-5 animate-on-scroll">My Blog</h2>
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">My Blog</h2>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">How I Started with CTFs</h5>
@@ -377,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">JWT Authentication Explained</h5>
@@ -386,7 +390,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Mininet Basics for Students</h5>
@@ -402,10 +406,10 @@
         <!-- Contact Section -->
         <section id="contact" class="py-5">
             <div class="container">
-                <h2 class="section-title text-center mb-5 animate-on-scroll">Contact Me</h2>
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">Contact Me</h2>
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <form id="contactForm" class="animate-on-scroll">
+                        <form id="contactForm" data-aos="fade-up">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="name" required>
@@ -420,13 +424,15 @@
                             </div>
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
-                        <div class="text-center mt-4 animate-on-scroll">
+                        <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="100">
                             <p>Or reach out via:</p>
-                            <p><i class="fas fa-map-marker-alt me-2"></i>Dhaka, Bangladesh</p>
+                            <p><i class="fas fa-phone-alt me-2"></i>+8801304294856</p>
+                            <p><i class="fas fa-envelope me-2"></i>sabbiras75ag@gmail.com</p>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>Santosh, Tangail, Dhaka, Bangladesh</p>
                             <div class="social-icons">
-                                <a href="https://github.com" target="_blank" class="text-decoration-none me-3"><i class="fab fa-github fa-2x"></i></a>
-                                <a href="https://linkedin.com" target="_blank" class="text-decoration-none me-3"><i class="fab fa-linkedin fa-2x"></i></a>
-                                <a href="mailto:email@example.com" class="text-decoration-none"><i class="fas fa-envelope fa-2x"></i></a>
+                                <a href="https://github.com/SabbirDG001" target="_blank" class="text-decoration-none me-3"><i class="fab fa-github fa-2x"></i></a>
+                                <a href="https://www.linkedin.com/in/sabbir-ahamad-b43a14263/" target="_blank" class="text-decoration-none me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                                <a href="mailto:sabbiras75ag@gmail.com" class="text-decoration-none"><i class="fas fa-envelope fa-2x"></i></a>
                             </div>
                         </div>
                     </div>
@@ -438,19 +444,27 @@
     <!-- Footer -->
     <footer class="py-4">
         <div class="container text-center">
-            <p class="mb-1"><strong>Dragon</strong></p>
-            <p class="mb-2">Built with <i class="fas fa-heart text-danger"></i> by Dragon</p>
+            <p class="mb-1"><strong>Sabbir Ahamad</strong></p>
+            <p class="mb-2">Built with care by Sabbir</p>
             <div class="social-icons mb-2">
-                <a href="https://github.com" target="_blank" class="text-decoration-none me-3"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com" target="_blank" class="text-decoration-none me-3"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:email@example.com" class="text-decoration-none"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/SabbirDG001" target="_blank" class="text-decoration-none me-3"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sabbir-ahamad-b43a14263/" target="_blank" class="text-decoration-none me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:sabbiras75ag@gmail.com" class="text-decoration-none"><i class="fas fa-envelope"></i></a>
             </div>
-            <small>&copy; 2025 Dragon. All Rights Reserved.</small>
+            <small>&copy; 2025 SabbirDG001. All Rights Reserved.</small>
         </div>
     </footer>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+      });
+    </script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>

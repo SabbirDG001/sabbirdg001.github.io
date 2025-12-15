@@ -10,47 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section');
 
-    // --- On-load Animations ---
-    const onLoadElements = document.querySelectorAll('.animate-on-load');
-    onLoadElements.forEach((el, index) => {
-        setTimeout(() => {
-            el.style.opacity = '1';
-            el.style.transform = 'translateY(0)';
-        }, index * 150); // Staggered animation
-    });
 
-    // --- Navbar Active Link Highlighting on Scroll ---
-    const activateNavLink = () => {
-        let index = sections.length;
-
-        while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
-
-        navLinks.forEach((link) => link.classList.remove('active'));
-        // Check if a corresponding navLink exists before adding 'active' class
-        if (navLinks[index]) {
-            navLinks[index].classList.add('active');
-        }
-    };
-
-    // --- Intersection Observer for Scroll Animations ---
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target); // Animate only once
-            }
-        });
-    };
-
-    const scrollObserver = new IntersectionObserver(observerCallback, observerOptions);
-    const animatedElements = document.querySelectorAll('.animate-on-scroll');
-    animatedElements.forEach(el => scrollObserver.observe(el));
 
     // --- Event Listeners ---
     window.addEventListener('scroll', () => {

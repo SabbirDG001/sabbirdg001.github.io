@@ -104,7 +104,7 @@ a:hover {
 
 .btn-outline-primary:hover {
     background-color: var(--primary-color);
-    color: #0a192f;
+    color: #fff !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 191, 255, 0.2);
 }
@@ -151,8 +151,17 @@ a:hover {
 
 /* --- Hero Section --- */
 .hero-section {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--scroll-padding)); /* Adjust for sticky navbar */
     padding-top: var(--scroll-padding);
+}
+
+/* All other sections */
+section[id]:not(#home) {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: var(--scroll-padding); /* Adjust for sticky navbar */
+    padding-bottom: var(--scroll-padding);
 }
 
 .hero-section .display-3 {
@@ -172,12 +181,18 @@ a:hover {
 .profile-img-container {
     width: 300px;
     height: 300px;
-    background: linear-gradient(135deg, var(--primary-color), var(--dark-bg-secondary));
     border-radius: 50%;
     margin: auto;
     border: 5px solid var(--border-color);
     box-shadow: 0 0 40px rgba(0, 191, 255, 0.3);
 }
+
+.profile-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+} 
 
 /* --- About Section --- */
 .about-card {
@@ -311,33 +326,7 @@ footer .social-icons a:hover {
     color: var(--primary-color);
 }
 
-/* --- Animation Classes --- */
-.animate-on-load,
-.animate-on-scroll {
-    opacity: 0;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
 
-.animate-on-load {
-    transform: translateY(20px);
-}
-
-/* Different scroll animations */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-.fade-in.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* For JS to use with Intersection Observer */
-.animate-on-scroll.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 
 /* --- Responsive Design --- */
